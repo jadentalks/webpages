@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Donate-Jaden Talks</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta charset="UTF-8">
+<style>
+
+body{
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: #fff;
+<!--height: 100vh;-->
+}
+
+#avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.stripelogo {
+  vertical-align: middle;
+  width: 120px;
+}
+
+.paypalqr {
+  width: 115px;
+  margin-bottom: 5px;
+  margin-left: 25px;
+  text-decoration: none;
+  background-color: #fff;
+} 
+
+.venmoqr {
+  width: 100px;
+}
+
+a{
+font-size: 10px;
+text-transform: uppercase;
+}
+
+/*** START: TOP NAVIGATION CSS ***/
+
+.nav-area{
+background: #262626;
+}
+
+.nav-area:after{
+content: '';
+clear: both;
+display: block;
+}
+
+.nav-area ul{
+list-style: none;
+margin: 0;
+}
+
+.menu {
+width: 500px;
+margin: 0 auto !important;
+}   
+     
+.nav-area > ul > li{
+float: left;
+position: relative;
+}
+
+.nav-area ul li a {
+text-decoration: none;
+color: #fff;
+padding: 15px 20px;
+display: block;
+font-weight: 500;
+letter-spacing: 1px;
+}
+
+.nav-area ul li:hover a{
+background: #34495e;
+}
+
+.nav-area ul ul {
+position: absolute;
+padding: 0;
+min-width: 160px;
+display: none;
+top: 100%;
+left: 0;
+box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+}
+.nav-area ul li:hover > ul{
+display: block;
+}
+.nav-area ul ul li:hover a{
+background: #262626;
+}
+.nav-area ul ul li{
+position: relative;
+}
+.nav-area ul ul ul{
+top: 0;
+left: 100%;
+}
+.nav-area ul ul ul li:hover a{
+background: #34495e;
+}
+
+/*** END: TOP NAVIGATION CSS ***/
+
+/*** START: OTHER CSS ***/
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2C3E50;
+  font-size:13px
+}
+
+#title {
+    font-family: 'Brush Script MT', 'Brush Script MT Italic', 'Brush Script', 'Lemon Jelly';
+    font-size: 70px;
+}
+
+#alt_h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2C3E50;
+  font-size:18px
+}
+
+.about {
+  margin: auto;
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 18px;
+  margin-bottom: 200px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2C3E50;
+  font-size:30px
+}
+
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2C3E50;
+  font-size:18px
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2C3E50;
+  font-size:15px
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2C3E50;
+  font-size:15px
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2C3E50;
+  font-size:15px
+}
+
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2C3E50;
+  font-size:10px
+}
+
+table, th, td {
+  border:0px solid black;
+  padding-bottom: 5px;
+}
+
+a.stripeonetime:link, a.stripeonetime:visited {
+  width: 30px;
+  border-radius: 15px;
+  background-color: #154360;
+  color: #fff;
+  padding: 6px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:15px;
+  
+}
+
+a.stripeonetime:hover, a.stripeonetime:active {
+  width: 30px;
+  border-radius: 15px;
+  background-color: #f44336;
+  background-image: linear-gradient(red, indigo);
+  color: #fff;
+  padding: 6px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:15px;
+  
+}
+
+a.striperecurring:link, a.striperecurring:visited {
+  width: 30px;
+  border-radius: 15px;
+  background-color: #154360;
+  color: #fff;
+  padding: 6px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:15px;
+  
+}
+
+a.striperecurring:hover, a.striperecurring:active {
+  width: 30px;
+  border-radius: 15px;
+  background-color: #f44336;
+  background-image: linear-gradient(yellow, green);
+  color: #000;
+  padding: 6px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:15px;
+  
+}
+
+</style>
+</head>
+
+<body>
+
+<!--START: TOP NAVIGATION MENU HTML-->
+<nav class="nav-area">
+	<ul class="menu">
+		<li><a href="https://jadentalks.github.io/webpages/jadentalks_donation.html">Donate</a></li>
+		<li><a href="https://jadentalks.github.io/webpages/jadentalks_about.html">About</a></li>
+		<li><a href="https://jadentalks.github.io/webpages/jadentalks_contact.html">Contact</a></li>
+		<li><a href="#">Misc</a>
+		  <ul>
+			<li><a href="#">Misc One</a></li>
+			<li><a href="#">Misc Two</a></li>
+			<li><a href="#">Misc Three</a></li>
+			<li><a href="#">Misc Four ***</a>
+			  <ul>
+				<li><a href="#">Misc Sub-One</a></li>
+				<li><a href="#">Misc Sub-Two</a></li>
+				<li><a href="#">Misc Sub-Three</a></li>
+				<li><a href="#">Misc Sub-Four ***</a>
+				  <ul>
+					<li><a href="#">Misc Sub Sub-One</a></li>
+					<li><a href="#">Misc Sub Sub-One</a></li>
+					<li><a href="#">Misc Sub Sub-One</a></li>
+					<li><a href="#">Misc Sub Sub-One</a></li>
+					<li><a href="#">Misc Sub Sub-One</a></li>
+				  </ul>
+				</li>
+				<li><a href="#">Misc Sub-Five</a></li>
+			  </ul>
+			</li>
+			<li><a href="#">Misc Five</a></li>
+		  </ul>
+		</li>
+	</ul>
+</nav>
+<!--END: TOP NAVIGATION MENU HTML-->
+
+<center><p id="title">Jaden Talks  <img src="JadenTalksAvatar.JPG" alt="Jaden Talks Avatar" id="avatar"></p></center>
+	
+<div class="about">
+
+<h1>About Jaden</h1>
+
+<p>Hello, my name is Jaden Riley. I was born in the northwestern United States in Philadelphia, Pennsylvania, but raised in Austin, Texas. After receiving my undergraduate degree in philosophy, I pursued a Master’s in Education. Despite my liberal arts background, I excelled professionally in my chosen field of Information Technology as a department manager, web developer, programmer, corporate trainer, and cloud engineering systems architect for international corporations and government entities.</p>
+
+<p>Information Technology is a fast-paced, high-stress, competitive, and sometimes cutthroat male-dominated field. It was a world where I excelled for two and half decades. Having earned professional accolades along with the respect and confidence from those I worked with, I eventually found myself with an intimidating title and a very comfortable six-figure salary, and all before my fortieth birthday. I had shattered what some might call the glass ceiling for women in technology. I was pretty damn proud of myself.</p>
+ 
+<p>While my professional success was real, my happiness was a lie, and like many other survivors of trauma and abuse, my life seemed terrific on paper. The outward success I had achieved in no way mirrored my inner reality wrought with complex trauma from decades of abuse that began before I was even born. No one knew the real me. I wanted to die, and I have battled suicide ideations since my pre-teen years. 
+I quit my job. I walked away from Information Technology. Heck, I even threw out my diplomas. None of my pursuits, successes, or achievements brought me any measure of true happiness or contentment. </p>
+
+<p>Fast-forwarding to today. I have now spent more than fifteen years on a journey into myself where I very slowly and painfully recognized and began to heal from layers of childhood abuse and complex trauma that cultivated toxic mental and behavioral patterns that followed me into adulthood. In retrospect, I can honestly say that most of my life was an absolute blur, a complete illusion rooted in ignorance, chaos, and fear. I had no idea who I was or what I wanted in life. I was utterly oblivious in recognizing the abuse and trauma that molded me.
+I wore a mask that was so intricate that even I could not see beyond it for most of my life. I then spent more than fifteen years trying to understand and break free from that mask. And now, well, I want nothing more to do with any form of camouflage, inauthenticity, or illusion in my life, period! </p>
+
+<p>I know that I am not alone. I have overcome some truly unpleasant life experiences. And for the most part, I had to do all of this alone. I had a little bit of help here and there, but nothing consistent. Nothing stable. Nothing reliable. I genuinely do not know what it is like to have a solid and consistent support system. </p>
+
+<p>I am still feeling my way into my new future. All I know is that I want to help others. I want to do this without exploiting anyone, and I want to do this without any masks. I no longer want to hide from myself or the world. I’m not exactly sure how to do this, but if you’ve read this far, welcome to the next leg of my journey. Welcome to ‘Jaden Talks.’ The goal is to use my own experiences to help others while opening myself up to the world to help heal the last remains of my past that still bear weight on my heart and soul.</P><div>
+
+
+<!-- Default Statcounter code for Jaden Talks
+https://jadentalks.github.io/webpages -->
+<script type="text/javascript">
+var sc_project=12690453; 
+var sc_invisible=1; 
+var sc_security="552765ac"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+Statcounter" href="https://statcounter.com/" target="_blank"><img
+class="statcounter" src="https://c.statcounter.com/12690453/0/552765ac/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+</body>
+</html>
