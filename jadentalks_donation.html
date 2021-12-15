@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Donate-Jaden Talks</title>
+<title>About-Jaden Talks</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -10,7 +10,15 @@
 <meta charset="UTF-8">
 <style>
 
-.avatar {
+body{
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: #fff;
+<!--height: 100vh;-->
+}
+
+#avatar {
   vertical-align: middle;
   width: 100px;
   height: 100px;
@@ -23,17 +31,92 @@
   width: 120px;
 }
 
-.venmoqr {
-  width: 100px;
-}
-
 .paypalqr {
   width: 115px;
   margin-bottom: 5px;
   margin-left: 25px;
   text-decoration: none;
   background-color: #fff;
+} 
+
+.venmoqr {
+  width: 100px;
 }
+
+a{
+font-size: 10px;
+text-transform: uppercase;
+}
+
+/*** START: TOP NAVIGATION CSS ***/
+
+.nav-area{
+background: #262626;
+}
+
+.nav-area:after{
+content: '';
+clear: both;
+display: block;
+}
+
+.nav-area ul{
+list-style: none;
+margin: 0;
+}
+
+.menu {
+width: 500px;
+margin: 0 auto !important;
+}   
+     
+.nav-area > ul > li{
+float: left;
+position: relative;
+}
+
+.nav-area ul li a {
+text-decoration: none;
+color: #fff;
+padding: 15px 20px;
+display: block;
+font-weight: 500;
+letter-spacing: 1px;
+}
+
+.nav-area ul li:hover a{
+background: #34495e;
+}
+
+.nav-area ul ul {
+position: absolute;
+padding: 0;
+min-width: 160px;
+display: none;
+top: 100%;
+left: 0;
+box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+}
+.nav-area ul li:hover > ul{
+display: block;
+}
+.nav-area ul ul li:hover a{
+background: #262626;
+}
+.nav-area ul ul li{
+position: relative;
+}
+.nav-area ul ul ul{
+top: 0;
+left: 100%;
+}
+.nav-area ul ul ul li:hover a{
+background: #34495e;
+}
+
+/*** END: TOP NAVIGATION CSS ***/
+
+/*** START: OTHER CSS ***/
 
 p {
   font-family: Arial, Helvetica, sans-serif;
@@ -51,13 +134,14 @@ p {
   color: #2C3E50;
   font-size:18px
 }
-	
-	.about {
+
+.about {
   margin: auto;
   width: 70%;
   border: 2px solid black;
   border-radius: 15px;
   padding: 18px;
+  margin-bottom: 200px;
 }
 
 h1 {
@@ -65,6 +149,7 @@ h1 {
   color: #2C3E50;
   font-size:30px
 }
+
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -161,12 +246,47 @@ a.striperecurring:hover, a.striperecurring:active {
 
 </style>
 </head>
+
 <body>
 
-<center>
+<!--START: TOP NAVIGATION MENU HTML-->
+<nav class="nav-area">
+	<ul class="menu">
+		<li><a href="https://jadentalks.github.io/webpages/jadentalks_donation.html">Donate</a></li>
+		<li><a href="https://jadentalks.github.io/webpages/jadentalks_about.html">About</a></li>
+		<li><a href="https://jadentalks.github.io/webpages/jadentalks_contact.html">Contact</a></li>
+		<li><a href="#">Misc</a>
+		  <ul>
+			<li><a href="#">Misc One</a></li>
+			<li><a href="#">Misc Two</a></li>
+			<li><a href="#">Misc Three</a></li>
+			<li><a href="#">Misc Four ***</a>
+			  <ul>
+				<li><a href="#">Misc Sub-One</a></li>
+				<li><a href="#">Misc Sub-Two</a></li>
+				<li><a href="#">Misc Sub-Three</a></li>
+				<li><a href="#">Misc Sub-Four ***</a>
+				  <ul>
+					<li><a href="#">Misc Sub Sub-One</a></li>
+					<li><a href="#">Misc Sub Sub-One</a></li>
+					<li><a href="#">Misc Sub Sub-One</a></li>
+					<li><a href="#">Misc Sub Sub-One</a></li>
+					<li><a href="#">Misc Sub Sub-One</a></li>
+				  </ul>
+				</li>
+				<li><a href="#">Misc Sub-Five</a></li>
+			  </ul>
+			</li>
+			<li><a href="#">Misc Five</a></li>
+		  </ul>
+		</li>
+	</ul>
+</nav>
+<!--END: TOP NAVIGATION MENU HTML-->
 
-<p id="title">Jaden Talks  <img src="JadenTalksAvatar.JPG" alt="Jaden Talks Avatar" class="avatar"></p>
-	
+<center><p id="title">Jaden Talks  <img src="JadenTalksAvatar.JPG" alt="Jaden Talks Avatar" id="avatar"></p></center>
+
+<center>	
 <p id="alt_h2"><img src="stripe.jpg" alt="Stripe Payment Systems Logo" class="stripelogo"> Make a one-time donation. No login required. &#128151;</p>
 
 <table style="width:25%">
@@ -240,7 +360,7 @@ a.striperecurring:hover, a.striperecurring:active {
 <p id="alt_h2">Make a one-time donation with Venmo or PayPal. &#128151;</p>
 <a href="https://account.venmo.com/u/JadenTalks1234" target="_blank"><img src="venmoqr.jpg" class="venmoqr"></a> <a href="https://www.paypal.com/paypalme/jadentalks1234" target="_blank"><img src="paypalqr.jpg" class="paypalqr"></a>
 </center>
-	
+
 <!-- Default Statcounter code for Jaden Talks
 https://jadentalks.github.io/webpages -->
 <script type="text/javascript">
